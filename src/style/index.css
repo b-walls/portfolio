@@ -33,3 +33,18 @@ html, body, #root {
   --bg: #0f0f0f;
   --fg: #E9E4D7;
 }
+
+/* fonts */
+
+.oswald-300 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barrio-regular {
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}

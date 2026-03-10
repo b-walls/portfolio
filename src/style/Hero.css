@@ -1,0 +1,39 @@
+.hero {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-container {
+  width: 80%;
+}
+
+.left-hero {
+  width: 45%;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-hero {
+  display: flex;
+  width: 55%;
+  padding: 2rem;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+}
+
+.hero-name {
+  line-height: 1;
+  text-align: center;
+  font-size: 5rem;
+}

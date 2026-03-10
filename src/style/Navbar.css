@@ -9,7 +9,8 @@ nav {
   /* box-model */
   width: 80%;
   padding: 0.75rem;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 
   /* borders */
   border-top: 1px solid var(--fg);
@@ -24,7 +25,7 @@ nav {
 .center-box {
   width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .left-box, .right-box {
@@ -40,7 +41,7 @@ nav a {
   cursor: pointer;
 }
 
-.theme-toggler {
+.theme-toggler, .icon-link {
   /* remove defaults */
   background: none;
   border: none;
@@ -62,33 +63,19 @@ nav a {
 }
 
 .icon-link {
-   /* remove defaults */
-  background: none;
   padding: 0 0.5rem;
-  border: none;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-
-  /* size */
-  font-size: 1.25rem;
-
-  /* centering  */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
 .nav-link {
   position: relative;
   display: inline-block;
+  font-size: 1.5rem;
 }
 
 .nav-link::after {
   content: "";
   position: absolute;
-  cursor: pointer;
   left: 50%;
   bottom: -6px;
 
