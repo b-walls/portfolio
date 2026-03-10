@@ -1,0 +1,80 @@
+nav {
+  width: fill;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  /* box-model */
+  width: 80%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+
+  /* borders */
+  border-top: 1px solid var(--fg);
+  border-bottom: 1px solid var(--fg);
+
+  /* alignment */
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.center-box {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.left-box, .right-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+nav a {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.theme-toggler {
+  /* remove defaults */
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+
+  /* size */
+  font-size: 1.25rem;
+
+  /* centering  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-box {
+  justify-content: flex-end;
+}
+
+.icon-link {
+   /* remove defaults */
+  background: none;
+  padding: 0 0.5rem;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+
+  /* size */
+  font-size: 1.25rem;
+
+  /* centering  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
