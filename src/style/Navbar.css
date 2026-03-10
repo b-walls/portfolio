@@ -37,6 +37,7 @@ nav a {
   padding: 0 1rem;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .theme-toggler {
@@ -78,3 +79,30 @@ nav a {
   justify-content: center;
 }
 
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  bottom: -6px;
+
+  width: 10px;
+  height: 6px;
+  background: currentColor;
+  border-radius: 50%;
+
+  transform: translateX(-50%) scale(0);
+  transition: transform 0.2s ease;
+
+  pointer-events: none;
+}
+
+.nav-link:hover::after {
+  transform: translateX(-50%) scale(1);
+}

@@ -34,9 +34,9 @@ function Navbar() {
                     </button>
                 </div>
                 <div className="center-box">
-                    <a href="/">About</a>
-                    <a href="/">Experience</a>
-                    <a href="/">Projects</a>
+                    <a className="nav-link" href="/">About</a>
+                    <a className="nav-link" href="/">Experience</a>
+                    <a className="nav-link" href="/">Projects</a>
                 </div>
                 <div className="right-box">
                     <a className="icon-link" href="https://github.com/b-walls" target="_blank"><LuGithub/></a>
