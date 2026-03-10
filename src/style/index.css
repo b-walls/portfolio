@@ -1,18 +1,19 @@
 :root {
-  --bg: #E9E4D7;
-  --fg: #BF2000;
+  --bg: #efe6d7;
+  --bg-deep: #e3d3bf;
+  --fg: #bf2000;
+  --glow-warm: rgba(255, 150, 92, 0.22);
+  --glow-cool: rgba(107, 136, 255, 0.14);
+  --grid: rgba(255, 255, 255, 0.22);
+  --vignette: rgba(61, 34, 16, 0.08);
 
   line-height: 1.5;
-
   color-scheme: light dark;
   color: var(--fg);
-  background-color: var(--bg);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -24,27 +25,92 @@
   padding: 0;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
 }
 
-[data-theme="dark"] {
-  --bg: #0f0f0f;
-  --fg: #E9E4D7;
+html {
+  scroll-padding-top: 86px; /* Adjust to your header height */
 }
 
-/* fonts */
+
+body {
+  margin-top: 86px;
+  color: var(--fg);
+  background:
+    radial-gradient(circle at 50% 0%, var(--glow-warm), transparent 65%),
+    /* radial-gradient(circle at 82% 16%, var(--glow-cool), transparent 24%), */
+    /* radial-gradient(circle at 52% 72%, rgba(255, 255, 255, 0.18), transparent 30%), */
+    linear-gradient(180deg, var(--bg), var(--bg-deep));
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 34px 34px;
+  mask-image: radial-gradient(circle at center, black 42%, transparent 88%);
+  opacity: 0.28;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at center, transparent 44%, var(--vignette) 100%);
+}
+
+[data-theme='dark'] {
+  --bg: #0d1018;
+  --bg-deep: #151b27;
+  --fg: #efe6d7;
+  --glow-warm: rgba(255, 144, 89, 0.14);
+  --glow-cool: rgba(98, 131, 255, 0.12);
+  --grid: rgba(255, 255, 255, 0.06);
+  --vignette: rgba(0, 0, 0, 0.26);
+}
+
+.oswald-100 {
+  font-family: 'Oswald', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
 
 .oswald-300 {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
 }
 
+.oswald-400 {
+  font-family: 'Oswald', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-500 {
+  font-family: 'Oswald', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .barrio-regular {
-  font-family: "Barrio", system-ui;
+  font-family: 'Barrio', system-ui;
   font-weight: 400;
   font-style: normal;
 }
