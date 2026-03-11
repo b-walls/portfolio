@@ -76,10 +76,8 @@ function Navbar() {
                     <a className="nav-link oswald-400" href="/">Experience <MdArrowOutward /></a>
                     <a className="nav-link oswald-400" href="/">Projects <MdArrowOutward /></a>
                     <hr className="nav-small-divider"/>
-                    <div className="nav-small-buttons">
-                        <a className="icon-link-small" id="github-icon-small" href="https://github.com/b-walls" target="_blank"><LuGithub/> <MdArrowOutward /></a>
-                        <a className="icon-link-small" id="linkedin-icon-small" href="https://linkedin.com/in/brendan-walls" target="_blank"><FaLinkedin/> <MdArrowOutward /></a>
-                    </div>
+                    <a className="icon-link-small" id="github-icon-small" href="https://github.com/b-walls" target="_blank"><LuGithub/> <MdArrowOutward /></a>
+                    <a className="icon-link-small" id="linkedin-icon-small" href="https://linkedin.com/in/brendan-walls" target="_blank"><FaLinkedin/> <MdArrowOutward /></a>
                 </div>
             </div>
         </nav>

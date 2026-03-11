@@ -190,24 +190,18 @@ nav a {
   transition-delay: 0.46s;
 }
 
-.nav-small.is-visible .nav-small-buttons {
+.nav-small.is-visible > a:nth-of-type(4) {
   transition-delay: 0.52s;
+}
+
+.nav-small.is-visible > a:nth-of-type(5) {
+  transition-delay: 0.58s;
 }
 
 .nav-small-divider {
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.50);
   margin: 1rem 0.5rem; 
-}
-
-.nav-small-buttons {
-  margin-left: 0.75rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.icon-link-small {
-  padding: 0rem;
 }
 
 @media (min-width: 767px) {
