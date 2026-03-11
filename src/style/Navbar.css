@@ -2,6 +2,7 @@ nav {
   width: fill;
   width: 100%;
   top: 0;
+  height: 50px;
   position: fixed;
   text-align: center;
   display: flex;

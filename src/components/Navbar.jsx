@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
+
+// icons
 import { LuMoon, LuSun, LuGithub } from "react-icons/lu";
 import { FaLinkedin } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdArrowOutward } from "react-icons/md";
 
-import './style/Navbar.css'
+import '../style/Navbar.css'
 
 function Navbar() {
     const [darkMode, setDarkMode] = useState(() =>

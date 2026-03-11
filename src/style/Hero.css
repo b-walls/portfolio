@@ -8,7 +8,6 @@
 }
 
 .hero-container {
-  height: 100vh;
   width: 85%;
   margin-top: 3rem;
   display: flex;
@@ -16,7 +15,7 @@
 
 /* left side */
 .left-hero {
-  width: 50%;
+  width: 40%;
   padding: 1rem;
 
   align-items: start;
@@ -31,15 +30,15 @@
 
 .hero-name {
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1;
+  margin-bottom: 0.5rem;
+  line-height: .8;
   font-size: 6rem;
 }
 
 /* right side */
 .right-hero {
   display: flex;
-  width: 50%;
+  width: 60%;
   margin-top: 3rem;
   padding: 0 2rem;
 
@@ -52,7 +51,7 @@
 .computer {
   background-color: rgba(30, 30, 30, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.10);
-  max-width: 600px;
+  width: 720px;
   border-radius: 20px;
   z-index: 2;
   transform: perspective(1000px) rotateX(8deg) rotateY(-5deg) rotateZ(1deg);
@@ -90,7 +89,8 @@ code {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  font-size: small;
+  font-size: 1.1rem;
+  color: white;
   padding: 0.25rem 1.75rem;
   margin-bottom: 1rem;
   display: block;
@@ -99,7 +99,7 @@ code {
 .computer::before {
   content: "";
   position: absolute;
-  inset: -100px;
+  inset: 10px;
 
   background: radial-gradient(
     circle,
@@ -119,15 +119,38 @@ code {
 .brace { color: #FFD700; }
 .bracket { color: #C586C0; }
 
+@media (max-width: 1399px) {
+  .computer {
+    width: 600px;
+  }
+
+  code {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 1199px) {
-  .hero-name {
-    font-size: 4.5rem;
+  .left-hero {
+    width: 50%;
+  }
+  .right-hero {
+    width: 50%;
+  }
+
+  .computer {
+    width: 460px;
+  }
+
+  code {
+    font-size: 0.7rem;
   }
 }
 
 @media  (max-width: 991px) {
   .hero-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    margin-top: 0rem;
+    gap: 3rem;
   }
 
   .right-hero,
@@ -136,17 +159,49 @@ code {
   }
 
   .right-hero {
-    padding: 1rem;
+    margin-top: 0;
   }
 
+  .computer {
+    width: 600px;
+  }
+  
   code {
-    font-size: x-small;
+    font-size: 0.9rem;
   }
 }
 
 /* md */
 @media (max-width: 766px) {
+  .computer {
+    width:540px;
+  }
+  
+  code {
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 575px) {
+  .computer {
+    width: 400px;
+    margin: 0px;
+  }
+  
+  code {
+    font-size: 0.55rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .computer {
+    width: 300px;
+    margin: 0px;
+  }
+  
+  code {
+    font-size: 0.45rem;
+    padding-left: 1rem;
+  }
 }
