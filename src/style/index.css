@@ -2,6 +2,7 @@
   --bg: #efe6d7;
   --bg-deep: #e3d3bf;
   --fg: #bf2000;
+  --primary: #fd9432;
   --glow-warm: rgba(255, 150, 92, 0.22);
   --glow-cool: rgba(107, 136, 255, 0.14);
   --grid: rgba(255, 255, 255, 0.22);
@@ -41,9 +42,8 @@ body {
   margin-top: 86px;
   color: var(--fg);
   background:
-    radial-gradient(circle at 50% 0%, var(--glow-warm), transparent 65%),
-    /* radial-gradient(circle at 82% 16%, var(--glow-cool), transparent 24%), */
-    /* radial-gradient(circle at 52% 72%, rgba(255, 255, 255, 0.18), transparent 30%), */
+    radial-gradient(circle at 70% 30%, var(--glow-warm), transparent 70%),
+    radial-gradient(circle at 82% 50%, var(--glow-cool), transparent 24%),
     linear-gradient(180deg, var(--bg), var(--bg-deep));
   background-attachment: fixed;
   position: relative;
