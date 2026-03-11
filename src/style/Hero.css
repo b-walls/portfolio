@@ -1,7 +1,10 @@
 .hero {
   height: auto;
+  width: 100vw;
   display: flex;
   justify-content: center;
+  overflow-x: clip;
+  /* background-color:red; */
 }
 
 .hero-container {
@@ -13,7 +16,7 @@
 
 /* left side */
 .left-hero {
-  width: 45%;
+  width: 50%;
   padding: 1rem;
 
   align-items: start;
@@ -30,28 +33,30 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   line-height: 1;
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 /* right side */
 .right-hero {
   display: flex;
-  width: 55%;
-  padding: 1rem;
+  width: 50%;
+  margin-top: 3rem;
+  padding: 0 2rem;
 
   align-items: center;
   display: flex;
   flex-direction: column;
+  perspective: 1200px;
 }
 
 .computer {
-  background-color: #1e1e1e;
+  background-color: rgba(30, 30, 30, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.10);
-  width: 600px;
+  max-width: 600px;
   border-radius: 20px;
   z-index: 2;
-  transform: rotateX(5deg) rotateY(-5deg);
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.75);
+  transform: perspective(1000px) rotateX(8deg) rotateY(-5deg) rotateZ(1deg);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
 }
 
 .window-controls {
@@ -91,6 +96,21 @@ code {
   display: block;
 }
 
+.computer::before {
+  content: "";
+  position: absolute;
+  inset: -100px;
+
+  background: radial-gradient(
+    circle,
+    var(--glow-warm),
+    transparent 60%
+  );
+
+  filter: blur(80px);
+  z-index: -1;
+}
+
 /* syntax colors */
 .keyword { color: #569CD6; }
 .variable { color: #4FC1FF; }  /* developer */
@@ -98,3 +118,35 @@ code {
 .string { color: #CE9178; }
 .brace { color: #FFD700; }
 .bracket { color: #C586C0; }
+
+@media (max-width: 1199px) {
+  .hero-name {
+    font-size: 4.5rem;
+  }
+}
+
+@media  (max-width: 991px) {
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .right-hero,
+  .left-hero {
+    width: 100%;
+  }
+
+  .right-hero {
+    padding: 1rem;
+  }
+
+  code {
+    font-size: x-small;
+  }
+}
+
+/* md */
+@media (max-width: 766px) {
+}
+
+@media (max-width: 575px) {
+}
