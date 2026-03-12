@@ -27,9 +27,9 @@ nav {
   margin-bottom: 0.25rem;
 
   /* appearance */
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--surface-border);
   border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--surface);
   backdrop-filter: blur(5px);
 
   /* layout */
@@ -88,7 +88,7 @@ nav a {
 
 .toggler:hover,
 .icon-link:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--surface-hover);
 }
 
 .nav-link {
@@ -123,9 +123,9 @@ nav a {
   padding: 1rem 0.25rem;
 
   /* appearance */
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid var(--surface-border);
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--surface-strong);
   backdrop-filter: blur(15px);
   box-shadow: inset;
   font-size: 1.25rem;
@@ -201,7 +201,7 @@ nav a {
 
 .nav-small-divider {
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.50);
+  border-top: 1px solid var(--surface-border);
   margin: 1rem 0.5rem; 
 }
 

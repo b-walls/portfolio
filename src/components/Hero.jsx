@@ -1,4 +1,6 @@
 import ComputerCard from './ComputerCard'
+import { FaPython, FaDocker, FaReact } from "react-icons/fa"
+import { SiDjango, SiPostgresql } from "react-icons/si"
 import '../style/Hero.css'
 import Tilt  from 'react-parallax-tilt'
 
