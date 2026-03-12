@@ -42,7 +42,7 @@ function ComputerCard() {
                 <span className='string' ref={el}></span><span className="string">"</span><br/>
                 {'    '}<span className="property">education</span>: <span className="brace">{'{'}</span><br/>
                 {'        '}<span className="property">school</span>: <span className="string">"James Madison University"</span>,<br/>
-                {'        '}<span className="property">degree</span>: <span className="string">"Bachelor's of Science"</span>,<br/>
+                {'        '}<span className="property">degree</span>: <span className="string">"Bachelor of Science"</span>,<br/>
                 {'        '}<span className="property">major</span>: <span className="string">"Computer Science"</span>,<br/>
                 {'        '}<span className="property">graduation</span>: <span className="string">"August 2026"</span><br/>
                 {'    '}<span className="brace">{'}'}</span>,<br/>

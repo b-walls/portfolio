@@ -13,6 +13,9 @@
   display: flex;
 }
 
+.subtle {
+  color: rgb(189, 187, 187)
+}
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /*            left side             */
@@ -63,6 +66,30 @@ button.secondary {
   padding: 1rem;
 }
 
+.info-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background-color: rgba(10, 10, 10, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 1rem;
+  width: 29%;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+
+.info-card h2 {
+  font-size: 1.5rem;
+}
+
+
+
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /*           right side             */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -70,7 +97,6 @@ button.secondary {
 .right-hero {
   display: flex;
   width: 60%;
-  margin-top: 3rem;
   padding: 0 2rem;
 
   align-items: center;
@@ -80,7 +106,8 @@ button.secondary {
 }
 
 .computer {
-  background-color: rgba(30, 30, 30, 0.5);
+  margin-top: 3rem;
+  background-color: rgba(10, 10, 10, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.10);
   width: 720px;
   border-radius: 20px;
