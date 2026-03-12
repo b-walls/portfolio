@@ -21,7 +21,7 @@ function Hero() {
             <div className="info-container">
               <div className="info-card">
                 <h2 className="oswald-500">2026</h2>
-                <p className="subtle">JMU CS Gradu  ation</p>
+                <p className="subtle">JMU CS Graduation</p>
               </div>
               <div className="info-card">
                 <h2 className="oswald-500">3+ Years</h2>
@@ -38,7 +38,7 @@ function Hero() {
               tiltMaxAngleX={4}
               tiltMaxAngleY={4}
               perspective={1200}
-              transitionSpeed={5000}
+              transitionSpeed={4000}
               scale={1.03}
               gyroscope={true}
             >

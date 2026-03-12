@@ -1,6 +1,6 @@
 .hero {
   height: auto;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   overflow-x: clip;
@@ -10,7 +10,9 @@
 .hero-container {
   width: 85%;
   margin-top: 3rem;
+  padding: 0 2rem;
   display: flex;
+  gap: 2rem;
 }
 
 .subtle {
@@ -21,7 +23,8 @@
 /*            left side             */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 .left-hero {
-  width: 40%;
+  flex: 1 1 0;
+  min-width: 0;
   padding: 1rem;
 
   align-items: start;
@@ -31,14 +34,18 @@
 
 .profession {
   color: var(--primary);
-  font-size: 1.25rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.25rem);
 }
 
 .hero-name {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   line-height: .8;
-  font-size: 6rem;
+  font-size: clamp(3rem, 9vw, 6rem);
+}
+
+.left-hero p {
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
 }
 
 .hero-cta {
@@ -68,10 +75,10 @@ button.secondary {
 
 .info-container {
   padding-top: 1rem;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
-  flex-wrap: wrap;
+  align-self: center;
 }
 
 .info-card {
@@ -80,15 +87,13 @@ button.secondary {
   backdrop-filter: blur(5px);
   border-radius: 15px;
   padding: 1rem;
-  width: 29%;
+  width: 100%;
   box-shadow: 0 30px 60px rgba(0,0,0,0.4);
 }
 
 .info-card h2 {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 5vw, 2rem);
 }
-
-
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 /*           right side             */
@@ -96,7 +101,8 @@ button.secondary {
 
 .right-hero {
   display: flex;
-  width: 60%;
+  flex: 1 1 0;
+  min-width: 0;
   padding: 0 2rem;
 
   align-items: center;
@@ -107,9 +113,10 @@ button.secondary {
 
 .computer {
   margin-top: 3rem;
+  position: relative;
   background-color: rgba(10, 10, 10, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.10);
-  width: 720px;
+  width: min(100%, 720px);
   border-radius: 20px;
   z-index: 2;
   transform: perspective(1000px) rotateX(8deg) rotateY(-5deg) rotateZ(1deg);
@@ -147,11 +154,12 @@ code {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  font-size: 1.1rem;
+  font-size: clamp(0.7rem, 1.35vw, 1.1rem);
   color: white;
   padding: 0.25rem 1.75rem;
   margin-bottom: 1rem;
   display: block;
+  overflow-x: auto;
 }
 
 .computer::before {
@@ -178,25 +186,15 @@ code {
 .bracket { color: #C586C0; }
 
 @media (max-width: 1399px) {
-  .computer {
-    width: 600px;
-  }
-
   code {
     font-size: 0.9rem;
   }
 }
 
 @media (max-width: 1199px) {
-  .left-hero {
-    width: 50%;
-  }
-  .right-hero {
-    width: 50%;
-  }
-
-  .computer {
-    width: 460px;
+  .hero-container {
+    padding: 0 1.5rem;
+    width: min(1200px, 100%);
   }
 
   code {
@@ -208,20 +206,16 @@ code {
   .hero-container {
     flex-direction: column-reverse;
     margin-top: 0rem;
-    gap: 3rem;
-  }
-
-  .right-hero,
-  .left-hero {
-    width: 100%;
+    gap: 1rem;
   }
 
   .right-hero {
     margin-top: 0;
+    padding: 0 1rem;
   }
 
   .computer {
-    width: 600px;
+    margin-top: 1rem;
   }
   
   code {
@@ -231,8 +225,8 @@ code {
 
 /* md */
 @media (max-width: 766px) {
-  .computer {
-    width:540px;
+  .hero-container {
+    padding: 0 1rem;
   }
   
   code {
@@ -242,24 +236,25 @@ code {
 
 @media (max-width: 575px) {
   .computer {
-    width: 400px;
     margin: 0px;
+    transform: perspective(1200px) rotateX(15deg);
+  }
+
+  .info-container {
+    grid-template-columns: 1fr;
   }
   
   code {
     font-size: 0.55rem;
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 @media (max-width: 375px) {
-  .computer {
-    width: 300px;
-    margin: 0px;
-  }
-  
   code {
     font-size: 0.45rem;
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
