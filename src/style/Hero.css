@@ -12,7 +12,7 @@
   margin-top: 3rem;
   padding: 0 2rem;
   display: flex;
-  gap: 2rem;
+  gap: 0rem;
 }
 
 .subtle {
@@ -45,7 +45,7 @@
 }
 
 .left-hero p {
-  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  font-size: clamp(0.8rem, 9vw, 1rem);
 }
 
 .hero-cta {
@@ -56,6 +56,8 @@
 }
 
 button.primary {
+  text-decoration: none;
+  color: white;
   font-size: 1rem;
   background: linear-gradient(to left, var(--primary), var(--primary-dark));
   border-radius: 9999px;
@@ -102,6 +104,7 @@ button.secondary {
 .right-hero {
   display: flex;
   flex: 1 1 0;
+  margin-left: 5rem;
   min-width: 0;
   padding: 0 2rem;
 
@@ -195,6 +198,10 @@ code {
   .hero-container {
     padding: 0 1.5rem;
     width: min(1200px, 100%);
+  }
+
+  .right-hero {
+    margin-left: 0rem;
   }
 
   code {
