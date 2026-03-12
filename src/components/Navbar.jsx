@@ -17,8 +17,6 @@ function Navbar() {
     const toggleTheme = () => {
         const theme = darkMode ? "dark" : "light";
         setDarkMode(!darkMode);
-        
-        console.log(theme);
         document.documentElement.setAttribute("data-theme", theme);
     }
     
