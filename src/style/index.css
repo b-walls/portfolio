@@ -78,6 +78,13 @@ textarea {
   font-family: 'Manrope', sans-serif;
 }
 
+
+.mini-heading {
+  color: var(--primary);
+  font-size: clamp(0.9rem, 1.5vw, 1.25rem);
+}
+
+
 body::before {
   content: '';
   position: fixed;
@@ -110,6 +117,7 @@ body::after {
   --grid: rgba(255, 255, 255, 0.06);
   --vignette: rgba(0, 0, 0, 0.26);
   --raised: rgba(10, 10, 10, 0.4);
+  --raised-2: rgba(60, 60, 60, 0.5);
   --surface: rgba(255, 255, 255, 0.05);
   --surface-strong: rgba(255, 255, 255, 0.08);
   --surface-border: rgba(255, 255, 255, 0.15);

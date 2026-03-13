@@ -34,11 +34,6 @@
   flex-direction: column;
 }
 
-.profession {
-  color: var(--primary);
-  font-size: clamp(0.9rem, 1.5vw, 1.25rem);
-}
-
 .hero-name {
   margin-top: 0.2rem;
   margin-bottom: 0rem;
