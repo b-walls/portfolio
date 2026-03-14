@@ -25,14 +25,11 @@
     align-items: center;
 }
 
-.section-card {
-    padding: 3rem;
-}
-
 .section-blurb {
-    font-size: clamp(1rem, 9vw, 3rem);
-    font-weight: 900;
-    letter-spacing: -2px;
+    font-size: clamp(2.4rem, 7vw, 4.8rem);
+    line-height: 0.92;
+    letter-spacing: -0.05em;
+    text-wrap: balance;
 }
 
 .about-card {
@@ -80,8 +77,4 @@
 }
 
 @media (max-width: 575px) {
-  .section-card {
-    padding: 1rem;
-  } 
-
 }
