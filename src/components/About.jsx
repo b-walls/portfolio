@@ -7,7 +7,7 @@ function About() {
             <div className="about-column">
                 <div className="section-card">
                     <h2 className="oswald-500 mini-heading">ABOUT</h2>
-                    <h1 className="section-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum lorem sem, et fringilla velit condimentum eu. Sed eget magna ut est fringilla dapibus.</h1>
+                    <h1 className="section-blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
                 </div>
             </div>
             <div className="about-column">
