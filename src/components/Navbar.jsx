@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 // icons
-import { LuMoon, LuSun, LuGithub } from "react-icons/lu";
+import { LuGithub } from "react-icons/lu";
 import { FaLinkedin } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdArrowOutward } from "react-icons/md";
@@ -9,25 +9,11 @@ import { MdArrowOutward } from "react-icons/md";
 import '../style/Navbar.css'
 
 function Navbar() {
-    const [darkMode, setDarkMode] = useState(() => true)
     const [navOpen, setNavOpen] = useState(false);
-
-    const toggleTheme = () => {
-        const theme = darkMode ? "dark" : "light";
-        setDarkMode(!darkMode);
-        document.documentElement.setAttribute("data-theme", theme);
-    }
     
     const toggleNav = () => {
         setNavOpen(!navOpen)
     }
-
-    useEffect(() => {
-        document.documentElement.setAttribute(
-            "data-theme",
-            darkMode ? "dark" : "light"
-        )
-    }, [darkMode])
 
     // close after a resize and column nav was opened
     useEffect(() => {
@@ -62,9 +48,6 @@ function Navbar() {
                         <a className="nav-link oswald-400" href="#contact">Contact</a>
                     </div>
                     <div className="right-box">
-                        <button className="toggler" id="theme-toggler" onClick={toggleTheme}>
-                            {darkMode ? <LuMoon/> : <LuSun/> }
-                        </button>
                         <a className="icon-link" id="github-icon" href="https://github.com/b-walls" target="_blank"><LuGithub/></a>
                         <a className="icon-link" id="linkedin-icon" href="https://linkedin.com/in/brendan-walls" target="_blank"><FaLinkedin/></a>
                         <button className="toggler" id="hamburger-toggler" onClick={toggleNav}>

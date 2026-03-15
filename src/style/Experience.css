@@ -1,6 +1,23 @@
 #experience {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experience-heading {
+    width: 85%;
+    text-align: left;
+}
+
+.experience-text {
+    width: 50%;
+}
+
+.experience-subtext {
+    margin-top: 0.75rem;
+    color: var(--muted);
+    font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+    max-width: 36rem;
 }
 
 .timeline {
@@ -22,7 +39,15 @@
     left: 50%;
     width: 2px;
     transform: translateX(-50%);
-    background: linear-gradient(var(--raised), var(--primary), var(--raised));
+    background: linear-gradient(rgba(250, 145, 46, 0), var(--primary), rgba(250, 145, 46, 0));
+}
+
+.timeline-box:first-of-type {
+    margin-top: 2rem;
+}
+
+.timeline-box:last-of-type {
+    margin-bottom: 2rem;
 }
 
 .timeline-box:nth-of-type(odd) {
@@ -38,12 +63,46 @@
 }
 
 .timeline-card {
+    position: relative;
     width: 50%;
-    background: linear-gradient(to top, var(--raised) 30%, var(--raised-2));
+    background-color: var(--raised);
     border: 1px solid var(--surface-border);
-    border-radius: 12px;
-    padding: 1rem;
+    border-radius: 25px;
+    transition: .5s;
 }
+
+.card-shell {
+    padding: 1.5rem;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-shell::after {
+    content: "";
+    position: absolute;
+    right: -3rem;
+    bottom: -6rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--primary), transparent 95%);
+    filter: blur(80px);
+    opacity: 0.5;
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+
+.card-shell:hover::after {
+    opacity: 1;
+}
+
+.timeline-card:hover {
+    border: 1px solid rgba(250, 145, 46, 0.5);
+    transform: translateY(-2px);
+}
+
+.timeline-card
 
 .employer {
     display: flex;
@@ -52,20 +111,42 @@
 
 .employer-heading {
     color: var(--primary);
-    font-size: clamp(0.8rem, 9vw, 1rem);
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
+.bullet-points {
+    padding: 1rem;
+}
+
+.bullet-points li {
+    margin-bottom: 0.5rem;
+}
+
+.bullet-points li:last-of-type {
+    margin-bottom: 0rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.skills span {
+    background-color: var(--raised-2);
+    border: 1px solid var(--surface-border);
+    border-radius: 9999px;
+    padding: 0.3rem 0.7rem;
+}
 
 @media  (max-width: 991px) {
+    .experience-text {
+        width: 100%;
+    }
     .timeline::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
         left: 0%;
-        width: 2px;
-        transform: translateX(-50%);
-        background: linear-gradient(var(--raised), var(--primary), var(--raised));
     }
 
     .timeline-box:nth-of-type(even) {
@@ -83,5 +164,10 @@
     .timeline-card {
         width: calc(100%);
         margin-left: 2rem;
+    }
+
+    .position {
+        line-height: 1.1;
+        margin-top: 0.2rem;
     }
 }
