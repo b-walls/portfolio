@@ -96,3 +96,9 @@
 
 @media (max-width: 575px) {
 }
+
+@media (max-width: 425px) {
+    .mini-cards {
+        grid-template-columns: 1fr;
+    }
+}
