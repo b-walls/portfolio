@@ -174,6 +174,11 @@
     border-radius: 25px;
     position: relative;
     overflow: hidden;
+    isolation: isolate;
+    clip-path: inset(0 round 25px);
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
 }
 
 .card-shell::after {
@@ -191,13 +196,15 @@
     transition: opacity 1s ease;
 }
 
-.card-shell:hover::after {
-    opacity: 1;
-}
+@media (hover: hover) and (pointer: fine) {
+    .card-shell:hover::after {
+        opacity: 1;
+    }
 
-.timeline-card:hover {
-    border: 1px solid rgba(250, 145, 46, 0.5);
-    transform: translateY(-2px);
+    .timeline-card:hover {
+        border: 1px solid rgba(250, 145, 46, 0.5);
+        transform: translateY(-2px);
+    }
 }
 
 .employer {
