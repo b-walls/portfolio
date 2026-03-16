@@ -1,0 +1,105 @@
+#projects {
+    padding-bottom: 15rem;
+}
+
+.projects-container {
+    width: var(--layout-width);
+    margin: 0 auto;
+}
+
+.projects-header h1 {
+    max-width: 50%;
+    font-weight: 900;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-card {
+    background: linear-gradient(270deg, rgba(10, 10, 10, 0.4), rgba(60, 60, 60, 0.1));    border: 1px solid var(--surface-border);
+    padding: 1.5rem;
+    border-radius: 25px;
+    width: 90%;
+    z-index: 2;
+}
+
+.project-name {
+    font-size: clamp(1.35rem, 1.2vw + 1rem, 2rem);
+    margin-top: 1rem;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 12px;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-desc {
+    margin-top: 0.75rem;
+    color: var(--muted);
+}
+
+.project-skills {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-skill {
+    background-color: var(--raised-2);
+    border: 1px solid var(--surface-border);
+    border-radius: 9999px;
+    padding: 0.35rem 0.75rem;
+}
+
+.project-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+a.primary {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to left, var(--primary), var(--primary-dark));
+    border-radius: 9999px;
+    padding: 0.2rem 2rem;
+    border: 1px solid var(--surface-border);
+    box-shadow: 0px 2px 15px 0px rgba(250,145,46,0.9);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media  (max-width: 991px) {
+    .projects-header h1 {
+        max-width: 100%;
+    }
+
+    .project-cards {
+        margin-top: 2rem;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .project-buttons {
+        margin-top: 1rem;
+    }
+    .project-buttons a {
+        width: 100%;
+        text-align: center;
+        padding: 0.2rem 0rem;
+    }
+}

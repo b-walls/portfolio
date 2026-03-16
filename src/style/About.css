@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 85%;
+    width: var(--layout-width);
     gap: 1rem;
 }
 
@@ -81,7 +81,7 @@
 }
 
 @media  (max-width: 991px) {
-    .about {
+    #about {
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
@@ -89,7 +89,6 @@
     .about-container {
         flex-direction: column;
         gap: 1rem;
-        width: 85%;
     }
 
     .about-card {

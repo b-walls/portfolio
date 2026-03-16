@@ -27,6 +27,13 @@
   --syntax-delimiter-2: #C586C0;
   --syntax-delimiter-3: #4EC9B0;
   --nav-height: 86px;
+  --layout-max-width: 1200px;
+  --layout-gutter: 2rem;
+  --layout-width: min(calc(100% - (var(--layout-gutter) * 2)), var(--layout-max-width));
+  --layout-narrow-width: min(100%, 36rem);
+  --experience-copy-width: 50%;
+  --timeline-card-width: 50%;
+  --nav-menu-width: 50%;
 
 
   line-height: 1.5;
@@ -56,11 +63,11 @@ body,
 
 html {
   scroll-padding-top: 86px; /* Adjust to your header height */
+  background-color: var(--bg);
 }
 
 
 body {
-  margin-top: var(--nav-height);
   color: var(--fg);
   font-family: 'Manrope', sans-serif;
   background:
@@ -68,6 +75,10 @@ body {
     linear-gradient(180deg, var(--bg), var(--bg-deep));
   background-attachment: fixed;
   position: relative;
+}
+
+#root {
+  background: transparent;
 }
 
 p,
@@ -139,4 +150,29 @@ body::after {
   font-family: 'Barrio', system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+@media (max-width: 1199px) {
+  :root {
+    --layout-gutter: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  :root {
+    --experience-copy-width: 100%;
+    --timeline-card-width: 100%;
+  }
+}
+
+@media (max-width: 766px) {
+  :root {
+    --layout-gutter: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  :root {
+    --nav-menu-width: 100%;
+  }
 }

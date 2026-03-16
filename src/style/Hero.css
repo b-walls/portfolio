@@ -7,9 +7,8 @@
 }
 
 .hero-container {
-  width: 85%;
+  width: var(--layout-width);
   height: 100%;           
-  padding: 0 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,11 +202,6 @@ code {
 }
 
 @media (max-width: 1199px) {
-  .hero-container {
-    padding: 0 1.5rem;
-    width: min(1200px, 100%);
-  }
-
   .right-hero {
     margin-left: 0rem;
   }
@@ -237,7 +231,6 @@ code {
 
   .right-hero {
     margin-top: 0;
-    padding: 0 1rem;
   }
 
   .hero-orbit {
@@ -259,10 +252,6 @@ code {
 
 /* md */
 @media (max-width: 766px) {
-  .hero-container {
-    padding: 0 1rem;
-  }
-
   .hero-cta,
   .hero-spotlight {
     width: 100%;

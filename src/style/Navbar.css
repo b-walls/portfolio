@@ -12,7 +12,7 @@ nav {
 
 .nav-container {
   /* layout */
-  width: 85%;
+  width: var(--layout-width);
   align-self: center;
   display: flex;
   justify-content: space-between;
@@ -119,7 +119,7 @@ nav a {
 
 .nav-small {
   /* box model */
-  width: 50%;
+  width: var(--nav-menu-width);
   padding: 1rem 0.25rem;
 
   /* appearance */
@@ -237,7 +237,6 @@ nav a {
 
 @media (max-width: 575px) {
   .nav-small {
-    width: 100%;
     font-size: 1.25rem;
   }
 }
