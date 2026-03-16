@@ -16,6 +16,10 @@
   --surface-border: rgba(255, 255, 255, 0.3);
   --surface-hover: rgba(255, 255, 255, 0.15);
   --shadow-soft: 0 30px 60px rgba(0, 0, 0, 0.4);
+  --card-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02));
+  --card-accent-glow: radial-gradient(circle, rgba(250, 145, 46, 0.14), transparent 70%);
+  --card-overlay-gradient: linear-gradient(180deg, transparent, rgba(10, 10, 10, 0.85));
+  --button-primary-gradient: linear-gradient(to left, var(--primary), var(--primary-dark));
   --code-surface: rgba(10, 10, 10, 0.4);
   --code-border: rgba(255, 255, 255, 0.1);
   --code-fg: white;
@@ -149,6 +153,13 @@ body::after {
 .barrio-regular {
   font-family: 'Barrio', system-ui;
   font-weight: 400;
+  font-style: normal;
+}
+
+.space-grotesk-700 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
   font-style: normal;
 }
 

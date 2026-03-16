@@ -36,8 +36,9 @@
 .hero-name {
   margin-top: 0.2rem;
   margin-bottom: 0rem;
-  line-height: .8;
-  font-size: clamp(3rem, 9vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+  font-size: clamp(3.5rem, 9vw, 6.8rem);
 }
 
 .left-hero p {
@@ -89,7 +90,7 @@ button.secondary:hover {
 }
 
 .info-card {
-  background: linear-gradient(270deg, rgba(10, 10, 10, 0.4), rgba(60, 60, 60, 0.1));    border: 1px solid var(--surface-border);
+  background: var(--card-gradient);
   border: 1px solid var(--surface-border);
   backdrop-filter: blur(5px);
   border-radius: 15px;

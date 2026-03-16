@@ -1,0 +1,72 @@
+.skills-container {
+    width: var(--layout-width);
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.coursework-container {
+    width: var(--layout-width);
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.skills-header {
+    width: 50%;
+}
+
+.skills-content {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.skills-card {
+    background: var(--card-gradient);
+    border: 1px solid var(--surface-border);
+    box-shadow: var(--shadow-soft);
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.skill-card-heading {
+    color: var(--primary);
+    font-size: medium;
+}
+
+.pills {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}
+
+.coursework-card {
+    background: var(--card-gradient);
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--surface-border);
+    box-shadow: var(--shadow-soft);
+    padding: 1rem;
+    border-radius: 25px;
+    gap: 0.75rem;
+}
+
+@media (max-width: 991px) {
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .skills-content,
+  .skills-header {
+    width: 100%
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-content {
+    grid-template-columns: 1fr;
+  }
+}

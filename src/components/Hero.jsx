@@ -8,7 +8,7 @@ function Hero() {
         <div className="hero-container">
           <div className="left-hero">
             <h2 className="oswald-500 mini-heading">FULL-STACK DEVELOPER</h2>
-            <h1 className="hero-name barrio-regular">Brendan<br></br> Walls</h1>
+            <h1 className="hero-name space-grotesk-700">Brendan<br/>Walls</h1>
             <p className="subtle">Hello, I’m Brendan. I’m a full stack developer pursuing a Bachelor of Science in Computer Science at James Madison University. I’m currently looking for opportunities where I can contribute to a team of developers, make a meaningful impact, and continue growing my skills.</p>
             <div className="hero-cta">
               <button className="primary">

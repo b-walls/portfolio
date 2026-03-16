@@ -35,7 +35,8 @@
 }
 
 .about-card {
-    background: linear-gradient(270deg, rgba(10, 10, 10, 0.4), rgba(60, 60, 60, 0.1));    border: 1px solid var(--surface-border);
+    background: var(--card-gradient);
+    border: 1px solid var(--surface-border);
     border-radius: 25px;
     max-width: 100%;
     padding: 2rem;

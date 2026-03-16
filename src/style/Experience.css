@@ -81,7 +81,7 @@
 .timeline-card {
     position: relative;
     width: var(--timeline-card-width);
-    background: linear-gradient(270deg, rgba(10, 10, 10, 0.4), rgba(60, 60, 60, 0.1));
+    background: var(--card-gradient);
     border: 1px solid var(--surface-border);
     border-radius: 25px;
     transition: .5s;
