@@ -47,6 +47,9 @@ function Experience() {
             <h2 className="oswald-500 mini-heading">EXPERIENCE</h2>
             <h1 className="section-blurb">{heading}</h1>
             <p className="experience-subtext">{subtext}</p>
+            <a href="/resume.pdf" download className="resume-btn">
+              Download Resume
+            </a>
           </div>
         </div>
         <div className="timeline">
