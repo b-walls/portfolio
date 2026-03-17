@@ -60,6 +60,9 @@
 }
 
 @media (max-width: 991px) {
+    .contact-container {
+        padding-top: 2rem;
+    }
     .contact-card {
         grid-template-columns: 1fr;
         padding: 1.25rem;
