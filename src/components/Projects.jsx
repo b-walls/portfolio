@@ -71,8 +71,6 @@ function Projects() {
                   <div className="project-image-wrap">
                     <img className="project-img" src={project.imgPath} alt={`Example image of my project ${project.name}`} />
                     <div className="project-image-overlay">
-                      <span><MdRocketLaunch /> Built End-to-End</span>
-                      <span><LuSparkles /> User-Focused Experience</span>
                     </div>
                   </div>
                   <div className="project-copy">

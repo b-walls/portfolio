@@ -69,8 +69,9 @@ body,
 }
 
 html {
-  scroll-padding-top: 86px; /* Adjust to your header height */
+  scroll-padding-top: 86px;
   background-color: var(--bg);
+  scroll-behavior: smooth;
 }
 
 

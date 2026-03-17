@@ -3,6 +3,10 @@ import '../style/Hero.css'
 import Tilt  from 'react-parallax-tilt'
 
 function Hero() {
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
+
   return (
     <section className="hero" id="hero">
         <div className="hero-container">
@@ -11,10 +15,10 @@ function Hero() {
             <h1 className="hero-name space-grotesk-700">Brendan<br/>Walls</h1>
             <p className="subtle">Hello, I’m Brendan. I’m a full stack developer pursuing a Bachelor of Science in Computer Science at James Madison University. I’m currently looking for opportunities where I can contribute to a team of developers, make a meaningful impact, and continue growing my skills.</p>
             <div className="hero-cta">
-              <button className="primary">
+              <button className="primary" onClick={() => scrollToSection("projects")}>
                 View projects
               </button>
-              <button className="secondary">
+              <button className="secondary" onClick={() => scrollToSection("contact")}>
                 Contact me
               </button>
             </div>
