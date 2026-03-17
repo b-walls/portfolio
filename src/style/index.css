@@ -20,6 +20,9 @@
   --card-accent-glow: radial-gradient(circle, rgba(250, 145, 46, 0.14), transparent 70%);
   --card-overlay-gradient: linear-gradient(180deg, transparent, rgba(10, 10, 10, 0.85));
   --button-primary-gradient: linear-gradient(to left, var(--primary), var(--primary-dark));
+  --pill-surface: rgba(255, 255, 255, 0.035);
+  --pill-border: rgba(255, 255, 255, 0.08);
+  --pill-radius: 18px;
   --code-surface: rgba(10, 10, 10, 0.4);
   --code-border: rgba(255, 255, 255, 0.1);
   --code-fg: white;

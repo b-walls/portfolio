@@ -255,7 +255,7 @@
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.65rem;
     font-size: clamp(0.78rem, 0.35vw + 0.72rem, 0.92rem);
     font-weight: 300;
     margin-top: 0.85rem;
@@ -263,10 +263,12 @@
 }
 
 .skills span {
-    background-color: var(--raised-2);
-    border: 1px solid var(--surface-border);
-    border-radius: 9999px;
-    padding: 0.35rem 0.75rem;
+    border: 1px solid var(--pill-border);
+    background: var(--pill-surface);
+    border-radius: var(--pill-radius);
+    padding: 0.6rem 0.85rem;
+    color: rgba(239, 230, 215, 0.9);
+    line-height: 1.3;
 }
 
 @media  (max-width: 991px) {

@@ -54,10 +54,15 @@ function Skills() {
         </div>
         <div className="coursework-container">
           <div className="coursework-card">
-              <h2 className="oswald-500 skill-card-heading">COURSEWORK</h2>
-              <div className="pills">
+              <div className="coursework-copy">
+                <h2 className="oswald-500 skill-card-heading">COURSEWORK</h2>
+                <p className="coursework-subtext">
+                  Relevant classes that strengthened my foundation in software engineering, systems, and applied problem solving.
+                </p>
+              </div>
+              <div className="coursework-grid">
                 {coursework.map((course, index) => (
-                  <span className="project-skill" key={index}>{course}</span>
+                  <div className="course-pill" key={index}>{course}</div>
                 ))}
               </div>
           </div>
