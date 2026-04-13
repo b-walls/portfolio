@@ -79,7 +79,6 @@ body {
   color: var(--fg);
   font-family: 'Manrope', sans-serif;
   background:
-    radial-gradient(circle at 50% 0%, var(--glow-warm), transparent 40%),
     linear-gradient(180deg, var(--bg), var(--bg-deep));
   background-attachment: fixed;
   position: relative;
@@ -104,18 +103,6 @@ textarea {
 }
 
 
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-  background-size: 34px 34px;
-  mask-image: radial-gradient(circle at center, black 42%, transparent 88%);
-  opacity: 0.28;
-}
 
 body::after {
   content: '';
