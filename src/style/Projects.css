@@ -110,9 +110,9 @@
     transition: transform 0.45s ease;
 }
 
-.project-card:hover .project-img {
+/* .project-card:hover .project-img {
     transform: scale(1.04);
-}
+} */
 
 .project-image-overlay {
     position: absolute;

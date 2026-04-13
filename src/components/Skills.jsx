@@ -23,7 +23,7 @@ function Skills() {
   const coursework = [
     "Data Structures & Algorithms",
     "Applied Algorithms",
-    "Full Stack Development",
+    "Full-Stack Development",
     "Programming Languages",
     "Systems Engineering I/II",
     "Parallel & Distributed Systems"

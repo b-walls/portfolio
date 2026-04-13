@@ -8,10 +8,9 @@ function ComputerCard() {
     useEffect(() => {
     const typed = new Typed(el.current, {
         strings: [
-        "Open to Software Engineering Roles",
-        "Building Full-Stack Applications",
-        "Designing Backend Systems",
-        "About to graduate!",
+        "Designing Full-Stack applications",
+        "Building backend systems",
+        "Graduating this summer",
         ],
         typeSpeed: 55,
         backSpeed: 35,
