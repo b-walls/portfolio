@@ -6,6 +6,27 @@ import '../style/Projects.css'
 function Projects() { 
   const projects = [
     {
+      name: "Halo Network",
+      category: "Hackathon Winner",
+      status: "Prototype",
+      url: "https://landingpage-bice-nine.vercel.app/",
+      imgPath: "halo.png",
+      description: "A Bluetooth mesh network and offline navigation app built to keep people connected and oriented when cellular and internet infrastructure fails.",
+      summary: "Built in 24 hours, Halo pairs offline topographic maps with dead reckoning position tracking so users always know where they are — no signal required. A LoRa radio layer handles emergency broadcasts when even Bluetooth range isn't enough.",
+      highlights: [
+        "Built a working offline map with dead reckoning to track position without GPS or cell signal.",
+        "Designed a Bluetooth mesh network for peer-to-peer messaging with no infrastructure.",
+        "Prototyped LoRa integration for long-range emergency alerts during infrastructure failure."
+      ],
+      metrics: [
+        { label: "Signal Required", value: "None" },
+        { label: "Alerts", value: "LoRa" },
+        { label: "Nav", value: "Dead Reckoning" }
+      ],
+      skills: ["React", "Bluetooth Mesh", "LoRa", "Offline Maps"],
+      primaryLabel: "View Demo"
+    },
+    {
       name: "Film Finder",
       category: "Machine Learning + Full-Stack",
       status: "Live",
