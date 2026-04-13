@@ -126,6 +126,7 @@ button.secondary:hover {
   position: relative;
   background-color: var(--code-surface);
   border: 1px solid var(--code-border);
+  opacity: 90%;
   width: min(100%, 720px);
   border-radius: 20px;
   z-index: 2;
@@ -172,7 +173,7 @@ code {
   overflow-x: auto;
 }
 
-.computer::before {
+/* .computer::before {
   content: "";
   position: absolute;
   inset: -40px;
@@ -185,7 +186,7 @@ code {
 
   filter: blur(80px);
   z-index: -1;
-}
+} */
 
 /* syntax colors */
 .keyword { color: var(--syntax-keyword); }
