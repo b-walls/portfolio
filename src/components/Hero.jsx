@@ -22,7 +22,7 @@ function Hero() {
                 Contact me
               </button>
             </div>
-            <div className="info-container">
+            {/* <div className="info-container">
               <div className="info-card">
                 <h2 className="oswald-500">2026</h2>
                 <p className="subtle">JMU CS Graduation</p>
@@ -35,7 +35,7 @@ function Hero() {
                 <h2 className="oswald-500">Richmond</h2>
                 <p className="subtle">Based in Virginia</p>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="right-hero">
             <Tilt
